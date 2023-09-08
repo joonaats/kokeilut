@@ -7,4 +7,5 @@ def hintalasku(halkaisija, hinta):
 
 halkaisija1 = float(input("Anna pizzan halkaisija (cm): "))
 hinta1 = float(input("Anna pizzan hinta: "))
-print(hintalasku(halkaisija1, hinta1))
+print(f"{hintalasku(halkaisija1, hinta1):.2f}€")
+
