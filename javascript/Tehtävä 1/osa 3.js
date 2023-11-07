@@ -1,0 +1,13 @@
+'use strict';
+const num1 = prompt('Give number 1');
+const num2 = prompt('Give number 2');
+const num3 = prompt('Give number 3');
+const numInt1 = parseInt(num1);
+const numInt2 = parseInt(num2);
+const numInt3 = parseInt(num3);
+const sum = numInt1 + numInt2 + numInt3
+const product = numInt1 * numInt2 * numInt3
+const avg = (numInt1 + numInt2 + numInt3) / 3
+document.querySelector('#sum').innerHTML = sum;
+document.querySelector('#product').innerHTML = product;
+document.querySelector('#avg').innerHTML = avg;
