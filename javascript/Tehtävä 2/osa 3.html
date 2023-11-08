@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="list">
+</ul>
+<script>
+    'use strict';
+    const doggies = []
+    for (let i = 0; i < 6; i++) {
+        const name = prompt("Give dog's name: ");
+        doggies.push(name)
+    }
+    doggies.sort()
+    doggies.reverse()
+    let list = ""
+    for (let i = 0; i < 6; i++) {
+        list += "<li>" + doggies[i] + "</li>"
+    }
+    document.querySelector('#list').innerHTML = list;
+</script>
+</body>
+</html>

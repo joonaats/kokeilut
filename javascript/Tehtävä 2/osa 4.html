@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    'use strict';
+    const numbers = []
+    let check = false
+    while (check !== true) {
+        const num = prompt("Give a number (0 to end): ")
+        const numInt = parseInt(num, 10)
+        if (numInt !== 0) {
+            numbers.push(numInt)
+        } else {
+            check = true
+        }
+    }
+    numbers.sort(function(a,b){return b-a})
+    for (let i = 0; i < numbers.length; i++) {
+        console.log(numbers[i])
+    }
+</script>
+</body>
+</html>

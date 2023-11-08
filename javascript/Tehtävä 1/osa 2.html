@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="osa 2.js" defer></script>
 </head>
 <body>
 <p id="target"></p>
+<script>
+    'use strict';
+    const name = prompt('Type your name.');
+    document.querySelector('#target').innerHTML = 'Hello, ' + name + '!';
+</script>
 </body>
 </html>
