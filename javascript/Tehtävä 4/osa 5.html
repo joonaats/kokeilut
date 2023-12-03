@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<article>
+  <p id="target"></p>
+</article>
+<script>
+'use strict';
+  async function hehe(){
+      try {
+        const response = await fetch(`https://api.chucknorris.io/jokes/random`);
+        const jsonData = await response.json();
+        document.querySelector('#target').innerHTML = jsonData.value;
+        console.log(jsonData.value)
+    } catch (error) {
+        console.log(error.message);
+    }
+}
+
+hehe();
+
+</script>
+</body>
+</html>
